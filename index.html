@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock-Paper-Scissors Game</h1>
+    </header>
+    <main>
+        <table id="score-container">
+            <tr>
+                <td class="player">User</td>
+                <td class="player">Computer</td>
+            </tr>
+            <tr>
+                <td id="user-score" class="score">0</td>
+                <td id="computer-score" class="score">0</td>
+            </tr>
+        </table>
+        <p id="result" >Make your move!</p>
+        <div class="choices">
+            <ul>
+                <li><i id="rock" class="choice fas fa-hand-rock"></i><p class="choice-name"><span>Rock</span></p></li>
+                <li><i id="paper" class="choice fas fa-hand-paper"></i><p class="choice-name"><span>Paper</span></p></li>
+                <li><i id="scissors" class="choice fas fa-hand-scissors"></i><p class="choice-name"><span>Scissors</span></p></li>
+                <li><i id="lizard" class="choice fas fa-hand-lizard"></i><p class="choice-name"><span>Lizard</span></p></li>
+                <li><i id="spock" class="choice fas fa-hand-spock"></i><p class="choice-name"><span>Spock</span></p></li>
+            </ul>
+        </div>
+    </main>
+    <div class="reset"><button id="reset-button">RESET</button></div>
+    <div style="display: none;" class="rules">
+        <button>RULES</button>
+        <div class="info-rules">
+            <p>"Scissors decapitate Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."</p>
+            <img src="https://static.wikia.nocookie.net/bigbangtheory/images/7/7d/RPSLS.png/revision/latest?cb=20120822205915" alt="Schematic ilustration">
+        </div>
+    </div>
+    <footer>
+        <span>Coded by <a target="_blank" className="text-decoration-none text-primary"  href="https://andreea-farago.github.io/">Andreea Farago</a></span>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
