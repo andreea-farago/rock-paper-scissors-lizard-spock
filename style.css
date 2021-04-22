@@ -90,14 +90,73 @@ ul li {
     font-weight: bold;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 #reset-button:hover,
 #reset-button:active{
     transform:scale(1.2);
 }
 
+
+#rules-button{
+    position: fixed;
+    bottom:50px;
+    right: 20px;
+    background-color: #1e3d59;
+    border: 3px solid #1e3d59;
+    border-radiuS: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+#rules-button:hover, 
+#rules-button:active{
+    transform:scale(1.2);
+}
+#info{
+    display: none;
+}
+.info-wrapper{
+    background-color:rgba(0, 0, 0, 0.61);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right:0%;
+    bottom:0;
+    color: white;
+    display:none;
+}
+#info-rules{
+    background: #1e3d59;
+    color:#f5f0e1;
+    position: fixed;
+    bottom: 10%;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    border: 3px solid #f5f0e1;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    
+}
+#info-rules img{
+    width: 28vw;
+}
+@media screen and (max-width: 714px)
+{
+    #info-rules{
+        flex-direction: column;
+        top:15%;
+    }
+}
+
 footer{
-    background-color: rgba(255, 255, 255, 0.637);
+    background-color: rgba(255, 255, 255, 0.836);
     position: fixed;
     bottom: 0%;
     left:0%;
@@ -112,7 +171,7 @@ a{
 a:hover,
 a:active{
     color: #ff6e40;
-}
+} 
 
 .win-background{
     background-color: #00FF7F;

@@ -9,6 +9,7 @@ const scissors_li = document.getElementById("scissors");
 const lizard_li = document.getElementById("lizard");
 const spock_li = document.getElementById("spock");
 const resetBtn = document.getElementById("reset-button");
+const rulesBtn = document.getElementById("rules-button");
 
 
 function draw(userChoice, computerChoice){
@@ -83,4 +84,13 @@ resetBtn.addEventListener("click", () => {
     computerScore = 0;
     userScore_td.innerHTML = userScore;
     computerScore_td.innerHTML = computerScore;
-})
+});
+
+rulesBtn.addEventListener("click", () => {
+    var box = document.getElementById("info");
+    if(box.style.display == "none"){
+        box.style.display = "block";
+    } else{
+        box.style.display = "none";
+    }
+});
